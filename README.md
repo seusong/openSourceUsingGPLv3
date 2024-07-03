@@ -28,6 +28,11 @@ To build MyOpenSourceProject, follow these steps:
    - brew intall pcre2 -> export PKG_CONFIG_PATH="/usr/local/opt/pcre2/lib/pkgconfig:$PKG_CONFIG_PATH" -> pkg-config --modversion libpcre2-8
    - brew install wget
 
+   cd external/wget-@latest
+   ./configure --enable-static --disable-shared
+   gcc -o my_project main.c
+   ./my_project
+
    after:
       gcc -o my_project main.c
       ./my_project
