@@ -16,15 +16,15 @@
  */
 
 #include <stdio.h>
-// #include <stdlib.h>
+#include <stdlib.h>
 
 int main()
 {
     printf("Hello, world!\n");
-    // printf("Calling Wget...\n");
+    printf("Calling Wget...\n");
 
     // Call the Wget executable installed by Homebrew
-    // system("wget --version");
+    system("wget --version");
 
     return 0;
 }
